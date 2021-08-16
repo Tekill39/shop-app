@@ -2,14 +2,20 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import {createStore, combineReducers} from 'redux';
 import {Provider} from 'react-redux';
+
+
 import productReducer from './store/reducers/product';
 import ShopNavigation from './navigation/ShopNavigation';
+import cartReducer from './store/reducers/cart';
+// import { composeWithDevTools } from 'redux-devtools-extension';
+
 
 const rootReducer = combineReducers({
-  products:productReducer
+  products:productReducer,
+  cart:cartReducer
 });
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, );
 
 export default function App() {
   return (
