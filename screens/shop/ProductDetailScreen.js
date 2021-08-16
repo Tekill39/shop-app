@@ -8,7 +8,7 @@ const ProductDetailScreen =props=>{
     const productId = props.navigation.getParam('productId');
     const selectedProduct = useSelector(state=>
         state.products.availableProducts.find(prod=>prod.id===productId));
-        const dispatch = useDispatch;
+    const dispatch = useDispatch();
 
         
     return(
@@ -16,8 +16,8 @@ const ProductDetailScreen =props=>{
             <Image style={styles.image} source={{uri:selectedProduct.imageUrl}}/>
             <View style={styles.actions}>
               <Button color={Colors.primary} title="Add to cart" 
-              onPress={()=>{
-                  dispatch(cartActions.addToCard(selectedProduct));
+              onAddToCart={()=>{
+                  dispatch(cartActions.addToCart(selectedProduct));
               }}/>  
             </View>            
             <View>

@@ -10,7 +10,7 @@ import HeaderButton from '../../components/UI/HeaderButton';
 
 const ProductOverviewScreen = props=> {
     const products = useSelector(state => state.products.availableProducts);
-      const dispatch = useDispatch;
+      const dispatch = useDispatch();
       return (
         <FlatList data={products} 
           keyExtractor = {item =>item.id}
@@ -26,7 +26,7 @@ const ProductOverviewScreen = props=> {
                 });
             }}
             onAddToCart={()=>{
-              dispatch(cartActions.onAddToCart(itemData.item));
+              dispatch(cartActions.AddToCart(itemData.item));
             }}            
           />
         )}
