@@ -19,6 +19,7 @@ const CartScreen = props => {
                 sum:state.cart.items[key].sum
             });
         }
+        return transformedCartItems;
     });
     return (
     <View style={styles.screen}>
@@ -30,15 +31,19 @@ const CartScreen = props => {
                 title="Order Now"
                 disabled={cartItems.length === 0}/>
         </View>
-        <FlatList data={cartItems}
-        keyExtractor={item=> item.productId}
-        renderItem={item=> (
-        <CartItem 
-            quanity={itemData.item.quanity}
-            title={itemData.item.productTitletitle.}
-            amount={itemData.item.sum}
-            onRemove={}/>)}/>
-    </View>
+        <FlatList 
+            data={cartItems}
+            keyExtractor={item=> item.productId}
+            renderItem={itemData => (
+                <CartItem 
+                    quanity={itemData.item.quanity}
+                    title={itemData.item.productTitle}
+                    amount={itemData.item.sum}
+                    onRemove={()=>{}}
+                    />
+                )}
+            />
+        </View>
     ); 
 };
 const styles= StyleSheet.create({

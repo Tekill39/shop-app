@@ -30,7 +30,7 @@ const ProductOverviewScreen = props=> {
             
             onAddToCart={()=>{
               
-              dispatch(cartActions.AddToCart(itemData.item));
+              dispatch(cartActions.addToCart(itemData.item));
               
             }}            
           />

@@ -1,7 +1,7 @@
-import Raect from 'react';
+import React from 'react';
 import {View, Text, StyleSheet,  TouchableOpacity, Platform} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import CartItem from '../../constants/models/cart-item';
+
 
 const CartItem = props => {
     return ( 
