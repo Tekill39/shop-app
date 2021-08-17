@@ -11,7 +11,9 @@ import HeaderButton from '../../components/UI/HeaderButton';
 const ProductOverviewScreen = props=> {
     const products = useSelector(state => state.products.availableProducts);
       const dispatch = useDispatch();
+      
       return (
+        
         <FlatList data={products} 
           keyExtractor = {item =>item.id}
           renderItem={itemData => (
@@ -25,14 +27,16 @@ const ProductOverviewScreen = props=> {
                     productTitle:itemData.item.title
                 });
             }}
+            
             onAddToCart={()=>{
+              
               dispatch(cartActions.AddToCart(itemData.item));
+              
             }}            
           />
         )}
         />)
 };
-
 ProductOverviewScreen.navigationOptions = navData => {
   return {
     headerTitle: 'All Products',
