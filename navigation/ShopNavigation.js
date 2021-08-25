@@ -14,7 +14,7 @@ const defaultNavOptions= {
     headerStyle:{
         backgroundColor:Platform.OS === 'android' ? Colors.primary : '' 
     },
-    headerTintColor:Platform.OS === 'android' ? 'white' : 'Colors.primary'
+    headerTintColor:Platform.OS === 'android' ? 'white' : Colors.primary
 };
 
 const ProductNavigator = createStackNavigator(
@@ -22,24 +22,24 @@ const ProductNavigator = createStackNavigator(
         ProductOverview:ProductOverviewScreen,
         ProductDetail:ProductDetailScreen,
         Cart:CartScreen
-    }, {
+    }, 
+    {
         navigationOptions:{
             drawerIcon: drawerConfig => (
-                <Ionicons name={Platform.OS ==='android' ? 'md-list' : 'ios-list'}
+                <Ionicons 
+                    name={Platform.OS ==='android' ? 'md-list' : 'ios-list'}
                     size={23}
                     color={drawerConfig.tintColor}
-                />)
-            }
-        },
-
-    {
-        defaultNavigationOptions: defaultNavOptions         
-});
+                />
+            )
+           },
+     defaultNavigationOptions:defaultNavOptions
+    }         
+);
 
 const OrdersNavigator = createStackNavigator({
     Orders:OrdersScreen    
-},
-    
+},    
  {
     defaultNavigationOptions:defaultNavOptions
 });
@@ -48,7 +48,10 @@ const ShopNavigator = createDrawerNavigator({
     Orders: OrdersNavigator
 }, {
     contentOptions:{
-        activeTintColor:Colors.primary
-    }
+        activeTintColor:Colors.primary,
+        itemsContainerStyle: {
+        marginVertical: 30,
+        }
+    }    
 })
 export default createAppContainer(ShopNavigator);

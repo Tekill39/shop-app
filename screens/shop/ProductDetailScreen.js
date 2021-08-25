@@ -4,12 +4,11 @@ import  Colors  from '../../constants/Colors';
 import {useSelector, useDispatch} from 'react-redux';
 import * as cartActions from '../../store/actions/cart';
 
-const ProductDetailScreen =props=>{
+const ProductDetailScreen = props =>{
     const productId = props.navigation.getParam('productId');
     const selectedProduct = useSelector(state=>
         state.products.availableProducts.find(prod=>prod.id===productId));
     const dispatch = useDispatch();
-
         
     return(
         <ScrollView>

@@ -9,7 +9,7 @@ import * as oredersActions from '../../store/actions/order';
 
 
 const CartScreen = props => {
-    const cartTotalAmount = useSelector(state=>state.cart.TotalAmount);
+    const cartTotalAmount = useSelector(state=>state.cart.totalAmount);
     const cartItems = useSelector(state=> {
         const  transformedCartItems = [];
         for(const key in state.cart.items){
