@@ -1,8 +1,8 @@
 # Приложение shop-app
 Приложение онлайн-магазин
-Raect native app about guess a number
+
 ### `ЭКРАН ТОВАРОВ`
-Экран с выбором товаров
+Карточки всех товаров
 <br><img src="https://github.com/Tekill39/image/blob/master/scrinshots/shop/Screenshot_20210902-205800_Expo%20Go.jpg" width="207" height="400" /><br>
 ## `Детализированный экран товара`
 <br><img src="https://github.com/Tekill39/image/blob/master/scrinshots/shop/Screenshot_20210902-205903_Expo%20Go.jpg" width="207" height="400" /><br>
