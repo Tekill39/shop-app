@@ -15,7 +15,7 @@
 ## `Экран заказа`
 <br><img src="https://github.com/Tekill39/image/blob/master/scrinshots/shop/Screenshot_20210902-205826_Expo%20Go.jpg" width="207" height="400" /><br>
 ## `Экран админки`
-Возможность удаление или редактирования товара
+Возможность удаления или редактирования товара
 <br><img src="https://github.com/Tekill39/image/blob/master/scrinshots/shop/Screenshot_20210902-205835_Expo%20Go.jpg" width="207" height="400" /><br>
 ## `Экран редактирования карточки товара`
 <br><img src="https://github.com/Tekill39/image/blob/master/scrinshots/shop/Screenshot_20210902-205841_Expo%20Go.jpg" width="207" height="400" /><br>
