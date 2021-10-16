@@ -3,12 +3,13 @@ import {createAppContainer} from 'react-navigation';
 import ProductOverviewScreen from '../screens/shop/ProductOverviewScreen';
 import Colors from '../constants/Colors';
 import {Platform} from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createDrawerNavigator } from 'react-navigation-drawer';
+
 import ProductDetailScreen from '../screens/shop/ProductDetailScreen';
 import CartScreen from '../screens/shop/CartScreen';
 import OrdersScreen from '../screens/shop/OrdersScreen';
-import { Ionicons } from '@expo/vector-icons';
 import UserProductScreen from '../screens/user/UserProductScreen';
 import EditProductscreen from '../screens/user/EditProduct';
 

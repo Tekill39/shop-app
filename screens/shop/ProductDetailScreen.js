@@ -20,7 +20,7 @@ const ProductDetailScreen = props =>{
               }}/>  
             </View>            
             <View>
-                <Text style={styles.price}>${selectedProduct.price.toFixed(2)}</Text>
+                <Text style={styles.price}>${selectedProduct.price}</Text>
                 <Text style={styles.description}>{selectedProduct.description}</Text>
             </View>
         </ScrollView>
